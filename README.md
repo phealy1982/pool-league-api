@@ -4,4 +4,4 @@ Rest API for Pool League App
 
 # Endpoints
 
-See Swagger ...☹️
+See Swagger ...☹️ https://pool-league-api.herokuapp.com/swagger-ui.html
