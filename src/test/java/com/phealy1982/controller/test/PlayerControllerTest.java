@@ -39,8 +39,6 @@ public class PlayerControllerTest {
 
     @Test
     public void getAllPlayers() throws Exception{
-
-
         mockMvc.perform(get(PLAYER_GET_URI,1))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name").value("Dummy")
