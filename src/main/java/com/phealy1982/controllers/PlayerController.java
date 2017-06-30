@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@Api(value = "/player", description = "Manage players") @RestController
+@Api(value = "player", description = "Manage players") @RestController
 public class PlayerController {
 
     @ApiOperation(
