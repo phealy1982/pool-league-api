@@ -10,4 +10,5 @@ public class URIConstant {
     public static final String PLAYER_ADD_URI = BASE_ROOT + "/player";
     public static final String PLAYER_GET_URI = BASE_ROOT + "/player/{id}";
 
+    public static final String MATCH_GET_URI = BASE_ROOT + "/match";
 }
