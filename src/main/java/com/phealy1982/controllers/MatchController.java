@@ -20,6 +20,7 @@ public class MatchController {
     @RequestMapping(value = URIConstant.MATCH_GET_URI, method = RequestMethod.GET)
     @ResponseBody
     ResponseEntity get() {
+
         return ResponseEntity.ok("{}");
     }
 }
