@@ -7,10 +7,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Api(value = "player", description = "Manage players")
 @RestController
@@ -24,6 +21,7 @@ public class PlayerController {
             notes = "Get information for specified player",
             response = Player.class)
     @RequestMapping(value = URIConstant.PLAYER_GET_URI, method = RequestMethod.GET)
+    @CrossOrigin
     ResponseEntity get() {
         return ResponseEntity.ok(repository.findAll());
     }
