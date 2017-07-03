@@ -16,19 +16,17 @@ public class Match {
     private String playerOneScore;
     private String playerTwo;
     private String playerTwoScore;
-    private String league;
     private String week;
     private String division;
     private String season;
     private String time;
     private String table;
 
-    public Match(String playerOne, String playerOneScore, String playerTwo, String playerTwoScore, String league, String week, String division, String season, String time, String table) {
+    public Match(String playerOne, String playerOneScore, String playerTwo, String playerTwoScore, String week, String division, String season, String time, String table) {
         this.playerOne = playerOne;
         this.playerOneScore = playerOneScore;
         this.playerTwo = playerTwo;
         this.playerTwoScore = playerTwoScore;
-        this.league = league;
         this.week = week;
         this.division = division;
         this.season = season;
@@ -66,14 +64,6 @@ public class Match {
 
     public void setPlayerTwoScore(String playerTwoScore) {
         this.playerTwoScore = playerTwoScore;
-    }
-
-    public String getLeague() {
-        return league;
-    }
-
-    public void setLeague(String league) {
-        this.league = league;
     }
 
     public String getWeek() {

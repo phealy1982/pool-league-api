@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by peterhealy on 30/06/2017.
  */
-@Api(value = "match", description = "Manage players")
+@Api(value = "match", description = "Manage matches")
 @RestController
 public class MatchController {
 
@@ -28,4 +28,9 @@ public class MatchController {
     ResponseEntity get() {
         return ResponseEntity.ok(repository.findAll());
     }
+
+
+
+
+
 }
